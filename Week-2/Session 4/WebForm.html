@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webform to join a social network</title>
+    <h1>Join a social network</h1>
+  </head>
+  <body>
+    <form method="post" action="submit-form.php" enctype="multipart/form-data">
+      <div>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+      </div>
+
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="about">About You:</label>
+        <textarea id="about" name="about" rows="3" cols="50"></textarea>
+      </div>
+
+      <div>
+        <label for="Photo">Photo:</label>
+        <input type="file" id="Photo" name="Photo" />
+      </div>
+
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
